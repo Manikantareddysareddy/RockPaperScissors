@@ -72,13 +72,7 @@ body {
   margin-bottom: 0px;
   text-align: center;
 }
-.score-para {
-  color: #223a5f;
-  font-family: 'Roboto';
-  font-size: 30px;
-  margin-top: 0px;
-  font-weight: bold;
-}
+
 .trigger-button {
   font-size: 16px;
   font-weight: 400;

@@ -8,6 +8,8 @@ import GameView from './components/GameView'
 
 import ResultView from './components/ResultView'
 
+import {ScorePara} from './components/GameView/styledComponents'
+
 import './App.css'
 
 const choicesList = [
@@ -43,7 +45,7 @@ class App extends Component {
     const myChoice = id.toLowerCase()
 
     const opponentChoice = choiceList[
-      Math.ceil(Math.random() * choiceList.length - 1)
+      Math.floor(Math.random() * choicesList.length)
     ].id.toLowerCase()
 
     const myChoiceObj = choiceList.find(
@@ -117,7 +119,7 @@ class App extends Component {
           </div>
           <div className="score-container">
             <p className="para">Score </p>
-            <p className="score-para">{scoreCount}</p>
+            <ScorePara className="score-para">{scoreCount}</ScorePara>
           </div>
         </div>
         {viewGame === false ? (
